@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  BMI Calculator
-//
-//  Created by Angela Yu on 21/08/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
-//
-
 import UIKit
 
 class CalculateViewController: UIViewController {
@@ -47,6 +39,8 @@ class CalculateViewController: UIViewController {
         
         let BMI = weghitt / pow(high, 2)
         print(BMI)
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
 }
 
